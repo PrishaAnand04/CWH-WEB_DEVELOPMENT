@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <title>Exercise05</title>
+    <style>
+        *{
+            margin: 1px;
+            padding: 1px;
+        }
+        nav{
+            margin-top: 0px;
+            position: fixed;
+            height: 15vh;
+            width: 99.7vw;
+            background-color:#FFC5C5 ;
+            border: 2px solid black;
+            z-index: 1000;
+        }
+        ul{
+            position: sticky;
+            align-items: center;
+            display: flex;
+        }
+        ul li{
+            font-size: 20px;
+            margin: 40px;
+            padding: 2px;
+            list-style: none;
+        }
+        .boxes{
+            border: 2px solid black;
+            width: 100vw;
+            height: 70vh;
+            position: relative;
+            top: 120px;
+            display: flex;
+            background-color: #FFEBD8;
+        }
+        .b1{
+            border: 2px solid black;
+            position: relative;
+            top: 2vh;
+            left: 3vw;
+            width: 25vw;
+            height: 65vh;
+            background-color: #C7DCA7;
+        }
+        .b2{
+            border: 2px solid black;
+            position: relative;
+            width: 25vw;
+            height: 65vh;
+            top: 2vh;
+            left: 35vw;
+            background-color: #C7DCA7;
+        }
+        .dot{
+            border: 2px solid black;
+            width: 20px;
+            border-radius: 800px;
+            z-index: 500;
+            position: fixed;
+            right: 0px;
+            top: 650px;
+            background-color: #B06161;
+        }
+        .b3{
+            border: 2px solid black;
+            border-radius: 50px;
+            height: 220px;
+            position: relative;
+            top: 130px;
+            background-color: #89B9AD;
+            font-size: 25px;
+            align-items: center;
+        }
+        .b4{
+            border: 2px solid black;
+            position: relative;
+            top: 250px;
+            float: bottom;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Help</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="boxes">
+    <div class="b1">
+        BOX1
+    </div>
+    <div class="b2">
+        BOX2
+    </div>
+</div>
+    <div class="dot">
+        <center>D</center>
+    </div>
+    <div class="b3">
+        <center class="te">Welcome to the SIGMA WEB DEVELOPMENT Express</center>
+    </div>
+</main>
+<footer>
+    <div class="b4">
+        <center>
+        --END--
+    </center>
+    </div>
+</footer>
+    
+</body>
+</html>
