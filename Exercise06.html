@@ -6,7 +6,7 @@
     <title>Exercise06_UltraEditorClone</title>
     <style>
         *{
-            margin: 3px;
+            margin: 4px;
         }
         nav{
             /* border: 2px solid black; */
@@ -45,6 +45,7 @@
             text-align: center;
         }
         .t2{
+            font-size: 24px;
             height: 100px;
             /* border: 2px solid purple; */
         }
@@ -63,35 +64,74 @@
             position: absolute;
         }
         .b2{
+            
             /* border: 2px solid green; */
             align-items: center;
+            
         }
         .head{
+            font-size: 35px;
+            gap: 25px;
+            margin-left: 0px;
             margin-top: 80px;
             margin-bottom: 40px;
         }
         .continer{
+            margin-left: 253px;
+            padding: auto;
             /* border: 2px solid red; */
-            align-items: center;
-            justify-content: center;
+            width: 1025px;
             display: flex;
+
             flex-wrap: wrap;
             
         }
-        .item{
-            margin: 3px;
-            padding: 2px;
+        
+        
+        .i1{
             height: 150px;
             width: 500px;
+            
+            background-color: #C2DEDC;
+             
+            /* grid-area: n1;  */
+        }
+        .i2{
+            height: 150px;
+            width: 500px;
+            
+            background-color: #C2DEDC;
+            /* grid-column: 2/3; */
+        }
+        .i3{
+            height: 150px;
+            width: 500px;
+            /* grid-column: 3/4; */
+            background-color: #C2DEDC;
+            /* grid-column: 3/4; */
+        }
+        .i4{
+            height: 150px;
+            width: 500px;
+            /* grid-column: 1/2; */
+            background-color: #C2DEDC;
+            /* grid-column: 1/2; */
+        }
+        .item{
+             margin: 3px;
+            padding: 2px;
+            height: 150px;
+            width: 500px; 
             background-color: #C2DEDC;
         }
         .minibox{
-            position: relative;
-            top: 20px;
+             position: relative;
+             top: 60px;
+             
         }
         .m1{
-            position: relative;
-            top: 55px;
+            /* position: relative;
+            top: 55px; */
         }
         .Db{
             border-radius: 20px;
@@ -136,13 +176,14 @@
         <div class="b2">
             <div class="head">
                 <center>
-            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Logo.png" alt="logo" height="60px"> Donwload UltraEdit
+            <img class="lo" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Logo.png" alt="logo" height="50px"> Donwload UltraEdit
         </center>
         </div>
         <div class="continer">
             <div class="item i1">
                 <center>
                 <p class="text1"><h3><b>English</b></h3></p>
+                <h6>English</h6>
                 <div class="minibox m1">
                     <input class="Db" type="button" value="Donwload 32-bit">
                     <input class="Dg" type="button" value="Donwload 64-bit">
