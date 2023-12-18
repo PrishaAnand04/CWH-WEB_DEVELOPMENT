@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWH EXERCISE06</title>
+    <style>
+        .logo{
+            width: 40px;
+            height: 23px;
+            /* background-color: blue; */
+        }
+        .logo img{
+            width: 170px;
+        }
+        nav{
+            display: flex ;
+            justify-content: space-around;
+            align-items: center;
+            gap: 330px;
+        }
+        .right ul{
+            display: flex;
+            gap: 34px;
+            align-items: center;
+        }
+        .right ul li{
+            list-style: none;
+            font-family: "Segoe UI";
+            padding: 0px 3px;
+            cursor: pointer;
+        }
+        .firstdiv{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            margin: 90px;
+        }
+        .firstdiv span{
+            font-family: "Segoe UI";
+            font-size: 48px;
+            overflow-wrap: break-word;
+        }
+        .t1{
+            width: 60vw;
+            text-align: center;
+            font-family: "Segoe UI";
+            font-size: 24px;
+            font-weight: 400;
+            overflow-wrap: break-word;
+        }
+        .b{
+            background-color: rgb(0,182,209);
+            color: white;
+            text-align: center;
+            height: 48px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            width: 290px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products <img src="https://cdn-icons-png.flaticon.com/128/2985/2985150.png" alt="arrow" height="10"></li>
+                    <li>Pricing <img src="https://cdn-icons-png.flaticon.com/128/2985/2985150.png" alt="arrow" height="10px"></li>
+                    <li>Resources <img src="https://cdn-icons-png.flaticon.com/128/2985/2985150.png" alt="arrow" height="10px"></li>
+                    <li>About us <img src="https://cdn-icons-png.flaticon.com/128/2985/2985150.png" alt="arrow" height="10px"></li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="translate"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstdiv">
+        <div>
+           <span>Download <b>UltraEdit</b>
+            for Windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="image01">
+           </span>
+        </div>
+        <div class="t1">
+            Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor 
+        </div>
+        <button class="b">
+           <b>DOWNLOAD MAX OR LINUX VERSION</b> 
+        </button>
+    </section>
+    </main>
+</body>
+</html>
