@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        .container{
+            width: 75vw;
+            height: 80vh;
+            background-color: blue;
+            
+        }
+        .ball{
+            width: 75px;
+            height: 70px;
+            background-color: red;
+            position: relative;
+            top: 87.5%;
+            left: 0px;
+            border-radius: 1000px;
+            animation: xaxis 1.7s cubic-bezier(0, 0, 0.28, 0.6) 50ms infinite alternate,
+            yaxis 1.7s cubic-bezier(0, 0, 0.28, 0.6) 50ms infinite alternate;
+        }
+        @keyframes xaxis {
+            0%{}
+            
+            25%{
+                left: 23.75%;
+            }
+            50%{
+                left: 47.5%;
+            }
+            
+            75%{
+                left: 71.25%;
+            }
+            100%{left: 95%;}
+            
+        }
+        @keyframes yaxis {
+            0%{
+                top: 0%;
+            }
+            25%{
+                top:87.5%;
+            }
+            50%{
+                top: 50%;
+            }
+
+            75%{
+                top: 65%;
+            }
+            100%{
+                top: 87.5;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
