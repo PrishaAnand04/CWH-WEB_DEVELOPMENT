@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+
+        }
+
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="scrollToTopBtn">Top</button>
+    <div><p> laboriosam rem aspernatur placeat repudiandae laborum recusandae atque quas alias, impedit similique voluptate voluptates nam! Repellat consequuntur veniam cumque sunt numquam architecto corporis saepe eos adipisci repudiandae ab quisquam nobis eveniet, beatae minus voluptatum voluptatem at voluptates qui commodi! Iste dignissimos cupiditate minus laborum delectus aliquam, optio, vitae natus non harum ullam, corrupti recusandae repudiandae sed facilis numquam ad obcaecati mollitia? Quae error rerum nesciunt in earum. Ratione reiciendis temporibus possimus eveniet maxime repellat voluptatum, ut quas nulla ipsam excepturi beatae ex assumenda incidunt magnam porro officia iusto dolorem nesciunt quasi, qui quae! Impedit, laborum deserunt officiis debitis, sequi beatae illum, fuga sit earum expedita perspiciatis odit amet magni eaque rerum reiciendis accusamus? Magnam ad consequatur cumque, dolorum nulla totam quia placeat vitae consectetur minima eaque voluptate cupiditate nobis ullam repudiandae ex quo nostrum perferendis voluptates aut in laudantium amet. Earum aliquam amet voluptate perferendis unde dicta labore eligendi repellendus inventore? Veritatis quidem necessitatibus corrupti nemo ullam natus. Maxime doloremque a quis consequatur, alias facilis perspiciatis sed cumque amet magni perferendis nam aliquid consequuntur dolore esse, eaque est tenetur obcaecati eveniet laudantium quas earum vero ratione illum. Distinctio porro magnam unde, amet sint veritatis, cum nesciunt nostrum, voluptates molestiae dolore quia quae reiciendis impedit ut suscipit quaerat natus. Dolores adipisci illum itaque velit, quod blanditiis quaerat temporibus aliquam dolorem, sint optio quisquam sit corrupti, neque soluta ipsa. Soluta repellat quia distinctio harum natus dicta, quasi quos reprehenderit eum, itaque commodi vel sed. Vitae qui officia quam iure culpa nemo beatae, fuga quisquam inventore minus cupiditate laborum autem, accusamus saepe nam consequuntur animi omnis sit laboriosam pariatur! Deleniti impedit iure recusandae consectetur perferendis autem voluptate, aut ipsa, veritatis.Et labore voluptates consectetur quidem officia voluptate cumque delectus dignissimos.</p></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Show or hide the button based on scroll position
+            window.onscroll = function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            };
+
+            // Smooth scroll to the top when the button is clicked
+            scrollToTopBtn.addEventListener("click", function () {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            });
+        });
+    </script>
+</body>
+
+</html>
